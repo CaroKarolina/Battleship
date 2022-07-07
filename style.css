@@ -1,0 +1,62 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main--div-board {
+    position: relative;
+    width: 1024px;
+    height: 863px;
+    margin: auto;
+    background: url(./board.jpg);
+}
+form {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: rgb(83, 175, 19);
+}
+form input {
+    background-color: #98cf71;
+    border-color: #53af13;
+    font-size: 1em;
+}
+table {
+    position: absolute;
+    left: 171px;
+    top: 99px;
+    border-spacing: 0px;
+}
+td {
+    width: 90px;
+    height: 90px;
+}
+h1 {
+    margin-left: 200px;
+    color: #53af13;
+    font-size: 3em;
+    animation: neon 5s infinite;
+}
+@keyframes neon {
+    0%, 39%, 41%, 59%, 61%, 100% {
+        text-shadow:
+        white 0 0 12px,
+        #98cf71 0 0 24px,
+        #98cf71 0 0 36px
+    }
+    40%, 60% {
+        text-shadow: none;
+    }
+}
+.hit {
+    background: url('./ship.png') no-repeat center center;
+}
+.miss {
+    background: url('./miss.png') no-repeat center center;
+}
+div#messageArea {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: rgb(83, 175, 19);
+}
